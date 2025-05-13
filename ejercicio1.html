@@ -25,17 +25,17 @@
 <body>
     <section>
         <h1>Este es el titulo</h1>
-        <a id="crear" onclick="botoncito();" href="#" class="btn btn-success">boton</a>
+        <a id="eliminar" href="#" class="btn btn-success">boton</a>
         <div class="caja"><p>abajo</p></div>
-        <div class="caja"><p>centro</p></div>
+        <div class="caja" id="borrar"><p>centro</p></div>
         <div class="caja"><p>arriba</p></div>
     </section>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script>
     // Definición de una función
-    function botoncito() {
- // Definición de una función
-    }
+    $('#eliminar').on('dblclick', function() {
+        $('#borrar').remove(); 
+        });
     </script>
 </html>
